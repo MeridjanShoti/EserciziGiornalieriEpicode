@@ -1,8 +1,8 @@
 
 aside{
     color: red;
-    border-left: 1px;
-    border-style: 1px solid #ffebbb;
+    border-left: 1px solid #ffebbb;
+    padding: 0 10px;
 }
 aside a, footer a{
     color: #579d9d;
@@ -12,7 +12,7 @@ header, header a{
 }
 header div{
     background-color: #fdfbf1;
-    border-top: 1px solid #ffd877;
+    border-top:1px solid #ffd877;
 }
 main img{
     border-radius: 3%;
@@ -26,4 +26,13 @@ main, footer{
 }
 header, h1{
     text-align: center;
+}
+.bordertop{
+    border-top:1 px solid #579d9d;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: grey;
 }
