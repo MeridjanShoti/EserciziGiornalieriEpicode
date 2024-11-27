@@ -1,0 +1,29 @@
+
+aside{
+    color: red;
+    border-left: 1px;
+    border-style: 1px solid #ffebbb;
+}
+aside a, footer a{
+    color: #579d9d;
+}
+header, header a{
+    color: #014e4d;
+}
+header div{
+    background-color: #fdfbf1;
+    border-top: 1px solid #ffd877;
+}
+main img{
+    border-radius: 3%;
+    box-shadow: 1px 1px 10px black;
+}
+main, footer{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+header, h1{
+    text-align: center;
+}
