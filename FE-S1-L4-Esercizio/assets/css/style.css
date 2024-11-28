@@ -1,4 +1,3 @@
-/* IMPOSTAZIONI GENERALI */
 html{
     background-image: url(/FE-S1-L4-Esercizio/assets/img/sfondo.png);
     font-family: "Poppins", serif;
@@ -6,6 +5,17 @@ html{
 header, main, aside, footer {
     box-shadow: -4px 8px 4px -4px black;
     border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+header{
+    padding-bottom: 40px;
+}
+header div img{
+    margin-bottom: 20px;
+}
+header div p{
+    margin-bottom: 20px;
 }
 main, aside{
     background-color: white;
@@ -17,16 +27,15 @@ body{
 }
 hr{
     border-color: blue;
+    width: 88%;
 }
 .gray{
     background-color: gray;
 }
-/* HEADER */
 header{
 background: linear-gradient(0deg, rgba(1,57,62,1) 0%, rgba(1,159,163,1) 100%);
 box-sizing: border-box;
 width: 100%;
-height: 15em;
 color: white;
 text-transform:uppercase;
 text-align: center;
@@ -34,18 +43,16 @@ text-align: center;
 header a{
     color: inherit;
 }
-/* MAIN */
 .big{
     font-size: 2em;
 }
-
-/* ELEMENTI NEL MAIN - ARTICLE */
+h1{
+    margin-bottom: 20px;
+}
 iframe{
     border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
-    width: 90%;
+    width: 100%;
 }
-
-/* TABELLE */
 .purple th{
     background-color:blue;
 }
@@ -60,9 +67,7 @@ caption{
     border-top: 1px solid #1f1f1f;
     border-bottom: 1px solid #1f1f1f;
 }
-/* FORM */
 
-/* ELEMENTI NELL' ASIDE */
 aside .big{
     text-transform: uppercase;
 }
@@ -75,12 +80,17 @@ aside div{
     width: 85%;
     height: 80px;
     margin: 15px;
-    padding: auto;
+    padding: 20px;
 }
 aside a{
     color: #006a7c;
 }
-/* FOOTER */
 footer{
     background: linear-gradient(180deg, rgba(107,133,135,1) 0%, rgba(30,34,34,1) 100%);
+}
+footer a{
+    color:violet;
+}
+section{
+    padding: 20px;
 }
