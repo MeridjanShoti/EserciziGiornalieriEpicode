@@ -8,9 +8,6 @@ header, main, aside, footer {
     padding: 20px;
     margin: 20px;
 }
-header{
-    padding-bottom: 40px;
-}
 header div img{
     margin-bottom: 20px;
 }
@@ -21,21 +18,25 @@ main, aside{
     background-color: white;
 }
 body{
-    width: 80vw;
+    width: 90vw;
     margin: 50px auto;
     padding: auto;
+    line-height: 1.6;
+}
+.purple :nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 hr{
     border-color: blue;
     width: 88%;
 }
 .gray{
-    background-color: gray;
+    background-color: rgb(175, 175, 175);
 }
 header{
 background: linear-gradient(0deg, rgba(1,57,62,1) 0%, rgba(1,159,163,1) 100%);
-box-sizing: border-box;
-width: 100%;
+width: 82%;
 color: white;
 text-transform:uppercase;
 text-align: center;
@@ -43,15 +44,27 @@ text-align: center;
 header a{
     color: inherit;
 }
+article p a{
+    color:#006a7c;
+}
 .big{
     font-size: 2em;
 }
 h1{
     margin-bottom: 20px;
+    font-weight:600;
+}
+strong{
+    color: blueviolet;
 }
 iframe{
-    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px auto;
     width: 100%;
+}
+.autoredata{
+    color: rgb(189, 189, 189);
+    margin: 20px auto;
 }
 .purple th{
     background-color:blue;
@@ -67,7 +80,16 @@ caption{
     border-top: 1px solid #1f1f1f;
     border-bottom: 1px solid #1f1f1f;
 }
-
+table{
+    margin: 20px auto;
+}
+td, th{
+    width: 33%;
+    padding: 10px;
+}
+th{
+    color: white;
+}
 aside .big{
     text-transform: uppercase;
 }
@@ -87,10 +109,42 @@ aside a{
 }
 footer{
     background: linear-gradient(180deg, rgba(107,133,135,1) 0%, rgba(30,34,34,1) 100%);
+    text-align: center;
+    color: white;
 }
 footer a{
     color:violet;
 }
+footer p{
+    margin-bottom: 20px;
+}
 section{
     padding: 20px;
+}
+code{
+    background-color: #c5c5c5;
+    border: 1px solid #535353;
+    border-radius: 5px;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+input{
+    border-bottom: 2px dotted gray;
+}
+main ul{
+    list-style: disc inside;
+    margin-bottom: 20px;
+}
+main ol{
+    list-style:decimal inside;
+    margin-bottom: 20px;
+}
+section h2{
+    margin: 5px auto;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 550;
 }
