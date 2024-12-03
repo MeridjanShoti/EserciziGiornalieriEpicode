@@ -194,21 +194,31 @@ console.log(me)
 console.log("Esercizio 12")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
 
+console.log(me)
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 console.log("Esercizio 13")
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.skills.pop()
+console.log("le skills di john doe sono " + me.skills)
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 console.log("Esercizio 14")
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let numbers = [];
+for (let i = 1; i <= 10; i++) {
+numbers.push(i)
+}
+console.log(numbers)
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 console.log("Esercizio 15")
 /* SCRIVI QUI LA TUA RISPOSTA */
+numbers.pop();
+numbers.push(100);
+console.log("sostituendo l'ultimo elemento dell'array avrò " + numbers)
