@@ -49,7 +49,7 @@ let num3 = 8
 if(num2%1 !=0||num3%1 !=0){ //serve a verificare di aver inserito numeri interi, in alternativa avrei potuto usare come condizione (num2.isInteger()==false||num3.isInteger()==false)
   alert("uno o più numeri non sono interi")
 }
-else if(num2==8||num3==8||num2+num3==8){
+else if(num2==8||num3==8||num2+num3==8||num2-num3==8){
   console.log("il valore almeno uno dei numeri o la somma tra i due è 8")
 }
 else{
