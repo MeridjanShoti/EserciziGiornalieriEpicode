@@ -132,13 +132,27 @@ console.log("i tre numeri, ordinati dal più grande al più piccolo sono: " + ar
 */
 console.log("Esercizio 8")
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const numero = 6
+if (typeof numero == "number"){
+  console.log("il valore fornito è un numero")
+}
+else{
+  console.log("il valore fornito non è un numero")
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 console.log("Esercizio 9")
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let num4 = 5
+let num5 = 8
+let numero2= num4
+if (numero2%2==0){
+  console.log("il numero " + numero2 + " è pari")
+}
+else{
+  console.log("il numero " + numero2 + " è dispari")
+}
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   let val = 7
@@ -152,7 +166,14 @@ console.log("Esercizio 9")
 */
 console.log("Esercizio 10")
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let val = 4
+if (5<= val < 10) {
+    console.log("Meno di 10");
+  } else if (val < 5) {
+    console.log("Meno di 5");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -165,7 +186,8 @@ const me = {
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.city = 'Toronto';
+console.log(me)
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
