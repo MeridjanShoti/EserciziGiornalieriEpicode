@@ -146,24 +146,25 @@ console.log (eyeColor)
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 console.log("esercizio 5")
-switch (starWarsCharacters.eye_color) {
+
+/* switch (starWarsCharacters.eye_color) {
   case 'blue':
-    eyeColor['blue']+= starWarsCharacters
+    eyeColor['blue']+= starWarsCharacters[]
     break;
   case 'yellow':
-    eyeColor['yellow']+= starWarsCharacters
+    eyeColor['yellow']+= starWarsCharacters[]
     break;
   case 'brown':
-    eyeColor['brown']+= starWarsCharacters
+    eyeColor['brown']+= starWarsCharacters[]
     break;
   case 'red':
-    eyeColor['red']+= starWarsCharacters
+    eyeColor['red']+= starWarsCharacters[]
     break;
   case 'red':
-    eyeColor['red']+= starWarsCharacters
+    eyeColor['red']+= starWarsCharacters[]
   default: console.log("ERRORE")
     break;
-}
+} */
 console.log(eyeColor)
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
@@ -191,17 +192,20 @@ console.log("esercizio 7")
 if (crewMass < 500) {
 console.log("Ship is under loaded")
 }
-else if (500<=crewMass<700) {
+else if (crewMass >= 500 && crewMass <700) {
 console.log("Ship is half loaded")
   }
-else if (700<=crewMass<=900) {
+else if (crewMass>=700 && crewMass<=900) {
 console.log("Warning: Load is over 700")
   }
-else if (900<crewmass<=1000) {
+else if (crewMass >900 && crewMass<=1000) {
 console.log("Critical Load: Over 900")
 }
-else {
+else if (crewMass>1000){
 console.log("DANGER! OVERLOAD ALERT: escape from ship now!")
+}
+else {
+console.log("il valore della massa non è corretto")
 }
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
@@ -221,14 +225,14 @@ console.log(starWarsCharacters[key].name + ": " + starWarsCharacters[key].gender
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 console.log("esercizio 9")
-console.log("l'array charactersNames contiene inizialmente " + charactersNames.length + "elementi")
-/* for (const key in charactersNames){
-if (charactersNames[key])
-} */
+console.log("l'array charactersNames contiene inizialmente " + charactersNames.length + " elementi")
+/* for (let i=0; i<charactersNames.length; i++){
 
-console.log("l'array charactersNames contiene adesso " + charactersNames.length + "elementi")
+}
+} */
+console.log(charactersNames)
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-/* console.log("esercizio 10")
-console.log(starWarsCharacters[Math.random*starWarsCharacters.length]) */
+console.log("esercizio 10")
+console.log(starWarsCharacters[Math.floor(Math.random()*starWarsCharacters.length)])
