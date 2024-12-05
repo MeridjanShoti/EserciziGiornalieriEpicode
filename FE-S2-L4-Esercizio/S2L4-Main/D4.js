@@ -1,7 +1,6 @@
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
-alert("le risposte sono tutte commentate")
 console.log("Esercizio 1");
 /* SCRIVI QUI LA TUA RISPOSTA */
 let area = function (l1, l2){
