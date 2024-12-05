@@ -131,21 +131,34 @@ console.log(reverseString()) */
 */
 console.log("Esercizio 8");
 /* SCRIVI QUI LA TUA RISPOSTA */
-function upperFirst(a){
+/* function upperFirst(a){
     a = prompt("inserisci il testo a cui va resa maiuscola la prima lettera")
-    
-    return a
+    a2 = a.replace(a.charAt(0), a.charAt(0).toUpperCase())
+    return a2
 }
-console.log(upperFirst())
+console.log(upperFirst()) */
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 console.log("Esercizio 9");
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function cutString (){
+    
+}
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 console.log("Esercizio 10");
 /* SCRIVI QUI LA TUA RISPOSTA */
+let array = []
+function giveMeRandom(n){
+n = parseInt(prompt("inserisci un numero intero"))
+switch(true){
+case a>19 && Number.isInteger(n) == true: 
+    break;
+    case Number.isInteger(a) == true: result4 = "il valore assoluto della differenza con 19 è " + Math.abs(a-19);
+    break;
+    default: result2 = "inserisci un numero valido"
+}
+}
