@@ -115,15 +115,28 @@ console.log(result3) */
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 console.log("Esercizio 7");
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+/* SCRIVI QUI LA TUA RISPOSTA */ 
+//non capisco come levare le virgole
+/* function reverseString(a){
+    a = prompt("inserisci il tuo testo da invertire")
+    let arr = [...a.split("")]
+    let arrR = [...arr.reverse()]
+    let reverse = arrR.join()
+    return reverse
+}
+console.log(reverseString()) */
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 console.log("Esercizio 8");
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function upperFirst(a){
+    a = prompt("inserisci il testo a cui va resa maiuscola la prima lettera")
+    
+    return a
+}
+console.log(upperFirst())
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
