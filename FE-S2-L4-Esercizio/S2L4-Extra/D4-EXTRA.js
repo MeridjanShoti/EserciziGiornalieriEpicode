@@ -7,7 +7,16 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+//prendo 5 numeri casuali da un range 0-10
+function giveMeRandom(){
+    let arr = []
+    for (i=0; i<5; i++){
+   return arr.push(Math.round(Math.random()*10))
+}
+}
+function checkArray(){
+    
+}
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
