@@ -91,7 +91,7 @@ console.log("Esercizio 5");
         return "EPICODE " + a
     }
 }
-console.log(epify()) */
+ console.log(epify()) */
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -121,7 +121,7 @@ console.log("Esercizio 7");
     a = prompt("inserisci il tuo testo da invertire")
     let arr = [...a.split("")]
     let arrR = [...arr.reverse()]
-    let reverse = arrR.join()
+    let reverse = arrR.join("")
     return reverse
 }
 console.log(reverseString()) */
@@ -133,8 +133,13 @@ console.log("Esercizio 8");
 /* SCRIVI QUI LA TUA RISPOSTA */
 /* function upperFirst(a){
     a = prompt("inserisci il testo a cui va resa maiuscola la prima lettera")
-    a2 = a.replace(a.charAt(0), a.charAt(0).toUpperCase())
-    return a2
+    aStr= [...a.split(" ")]
+    aString = []
+    for(i=0; i< aStr.length; i++){
+
+        aString.push(aStr[i].replace(aStr[i].charAt(0), aStr[i].charAt(0).toUpperCase()))
+    }
+    return aString.join(" ")
 }
 console.log(upperFirst()) */
 /* ESERCIZIO 9
@@ -143,9 +148,11 @@ console.log(upperFirst()) */
 */
 console.log("Esercizio 9");
 /* SCRIVI QUI LA TUA RISPOSTA */
-function cutString (){
-    
+/* function cutString (a){
+    a = prompt("inserisci il tuo testo da tagliare")
+    return a.slice(1, (a.length-1))
 }
+console.log(cutString()) */
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
@@ -154,11 +161,15 @@ console.log("Esercizio 10");
 let array = []
 function giveMeRandom(n){
 n = parseInt(prompt("inserisci un numero intero"))
-switch(true){
-case a>19 && Number.isInteger(n) == true: 
-    break;
-    case Number.isInteger(a) == true: result4 = "il valore assoluto della differenza con 19 è " + Math.abs(a-19);
-    break;
-    default: result2 = "inserisci un numero valido"
+for (i=0; i<n; i++){
+if(n>0 === true && Number.isInteger(n) === true) {
+    r = (Math.floor(Math.random()*11))
+    array.push(r)
+}
+else {
+return "il numero inserito non è valido"
 }
 }
+return array
+}
+console.log(giveMeRandom())
