@@ -228,17 +228,14 @@ console.log("ESERCIZIO 9")
 function trovaOldie(){
   const date = []
   movies.forEach(element => {
-    parseInt(date.push(element.Year))
+    date.push(element.Year)
   });
   let dataMin = Math.min(date)
-  movies.forEach(film => {
-    let oldie;
-    if (film.Year == dataMin){
-    oldie = film
+  for(element of movies){
+    if (element.Year == dataMin){
+      return element
     }
-    return oldie
-  })
-  
+  }
 }
 console.log(`il film più vecchio è: "${trovaOldie()}"`)
 /* ESERCIZIO 10
@@ -264,15 +261,48 @@ console.log(titoli())
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 console.log("ESERCIZIO 12")
+function filmNuovi(){
+let filmNuovi = movies.filter(movies => movies.Year >= 2000)
+return filmNuovi
+}
+console.log("i film usciti dal 2000 in poi sono i seguenti: ")
+console.log(filmNuovi())
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 console.log("ESERCIZIO 13")
+function sommaAnni(){
+  let sAnni = 0
+  for (element of movies){
+    sAnni += +element.Year
+  }
+  return sAnni
+}
+console.log("la somma degli anni dei film è " + sommaAnni())
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 console.log("ESERCIZIO 14")
+let IDimdb;
+function trovaID(){
+for (element of movies){
+  if  (IDimdb === element.imdbID){
+    return element.Title
+    }
+}
+}
+IDimdb='tt0848228'
+console.log("se l'ID imdb è " + IDimdb + "allora il titolo del film è " + trovaID())
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 console.log("ESERCIZIO 15")
+let anno;
+function primofilm(){
+  for (element of movies){
+    if (element.Year == anno)
+      return element.Title
+  }
+}
+anno = 2012
+console.log(`il primo film dell'anno ${anno} è ${primofilm()}`)
