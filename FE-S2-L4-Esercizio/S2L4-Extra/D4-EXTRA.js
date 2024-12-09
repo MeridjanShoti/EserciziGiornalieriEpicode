@@ -8,14 +8,23 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 //prendo 5 numeri casuali da un range 0-10
-function giveMeRandom(){
-    let arr = []
-    for (i=0; i<5; i++){
-   return arr.push(Math.round(Math.random()*10))
+let array = []
+function giveMeRandom(n){
+n = parseInt(prompt("inserisci un numero intero"))
+for (i=0; i<n; i++){
+if(n>0 === true && Number.isInteger(n) === true) {
+    r = (Math.floor(Math.random()*11))
+    array.push(r)
+}
+else {
+return "il numero inserito non è valido"
 }
 }
-function checkArray(){
-    
+return array
+}
+for (let element of array){
+    if (element>5)
+        
 }
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
