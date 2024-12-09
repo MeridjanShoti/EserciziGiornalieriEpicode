@@ -228,12 +228,12 @@ console.log("ESERCIZIO 9")
 function trovaOldie(){
   const date = []
   movies.forEach(element => {
-    date.push(element.Year)
+    parseInt(date.push(element.Year))
   });
-  let dataMin = Math.min(date)
+  let dataMin = Math.min(...date)
   for(element of movies){
     if (element.Year == dataMin){
-      return element
+      return element.Title
     }
   }
 }
