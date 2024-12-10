@@ -31,11 +31,23 @@
         color: #ff00d6;
       }
     </style>
+    <script>
+      const revealFooterLink = function () {
+        alert(document.querySelector("footer a"))
+      }
+      const makeItClickable = function () {
+        let a = document.getElementsByTagName("h1")[0]
+      let arr = [...a.innerText]
+      let arr2 = [...arr.pop()]
+      let b = arr.join("")
+      a.innerText = b
+    }
+    </script>
   </head>
 
   <body>
     <div>
-      <h1>Questo è il titolo della pagina</h1>
+      <h1 onclick="makeItClickable()">Questo è il titolo della pagina</h1>
       <h2>Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -70,7 +82,7 @@
 
     <div id="tableArea"></div>
 
-    <footer>
+    <footer onclick="revealFooterLink()">
       <h3>
         DOM Manipulation is super
         <a
@@ -162,20 +174,19 @@ hideFirstUl()
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
-      const makeItClickable = function () {}
-
+     
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
-
-      const revealFooterLink = function () {}
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-      const generateTable = function () {}
+      const generateTable = function () {
+        
+      }
 
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
