@@ -31,23 +31,11 @@
         color: #ff00d6;
       }
     </style>
-    <script>
-      const revealFooterLink = function () {
-        alert(document.querySelector("footer a").href)
-      }
-      const makeItClickable = function () {
-        let a = document.getElementsByTagName("h1")[0]
-      let arr = [...a.innerText]
-      let arr2 = [...arr.pop()]
-      let b = arr.join("")
-      a.innerText = b
-    }
-    </script>
   </head>
 
   <body>
     <div>
-      <h1 onclick="makeItClickable()">Questo è il titolo della pagina</h1>
+      <h1>Questo è il titolo della pagina</h1>
       <h2>Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -173,12 +161,23 @@ hideFirstUl()
       /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
-
-     
+      const makeItClickable = function () {
+        let a = document.querySelector("h1")
+        a.onclick = function (){
+          a.innerText = a.innerText.slice(0,-1)
+        }
+    }
+    makeItClickable()
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
-
+      const revealFooterLink = function () {
+        let footer = document.querySelector("footer")
+        footer.onclick = function (){
+        alert(document.querySelector("footer a").href)
+      }
+    }
+    revealFooterLink()
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
@@ -204,7 +203,16 @@ hideFirstUl()
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
 
-      const changeColorWithRandom = function () {}
+      const changeColorWithRandom = function () {
+        let r = []
+        for (i=0; i<3; i++){
+          r.push(Math.floor(Math.random()*256))
+        }
+        let col = document.getElementById("changeMyColor")
+       col.style.color = `rgb(${r[0]},${r[1]},${r[2]})`
+        
+      }
+      changeColorWithRandom()
     </script>
   </body>
 </html>
