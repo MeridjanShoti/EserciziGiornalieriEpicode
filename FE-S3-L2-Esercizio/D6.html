@@ -182,23 +182,67 @@ hideFirstUl()
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
-
+    let table = document.createElement("table");
       const generateTable = function () {
-
+        document.getElementById("tableArea").appendChild(table)
+        let tr1 = document.createElement("tr")
+        table.appendChild(tr1)
+        
+        let th = []
+       for (i=0; i<4; i++){
+        th.push(document.createElement("th"))
+       }
+       for (element of th){
+        tr1.appendChild(element)
+       }
+        th[0].innerText= "immagine"
+        th[1].innerText= "nome prodotto"
+        th[2].innerText= "quantità"
+        th[3].innerText= "prezzo"
+      
+      for (element of th){
+        element.style.border= "1px solid black"
       }
-
+    }
+      generateTable()
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
 
-      const addRow = function () {}
-
+      const addRow = function () {
+        let tr2 = document.createElement("tr")
+        table.appendChild(tr2)
+        let td = []
+        for (i=0; i<4; i++){
+        td.push(document.createElement("td"))
+       }
+       for (element of td){
+        tr2.appendChild(element)
+       }
+        td[0].innerHTML = "<img src='https://m.media-amazon.com/images/S/pv-target-images/dbf6812f59e5080cf420f1056bfceb66f7d6a43a8df19ace503ea70596afc0ff.jpg' alt='shrek' width=50px height=30px>"
+        td[1].innerText= "shrek"
+        td[2].innerText= "unico"
+        td[3].innerText= "fantastilioni di sbleuri"
+        for (element of td){
+        element.style.border= "1px solid black"
+      }
+      }
+    addRow()
       /* ESERCIZIO 14
       Crea una funzione che nasconda le immagini della tabella quando eseguita
     */
-
-      const hideAllImages = function () {}
-
+      let button = document.createElement("button")
+      button.innerText = "nascondi immagini"
+      table.appendChild(button)
+      
+      const hideAllImages = function () {
+        button.onclick = function(){
+        for (element of document.querySelectorAll("table img")){
+        element.style.display= "none"
+      }
+    }
+    }
+    hideAllImages()
       /* EXTRA ESERCIZIO 15
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
