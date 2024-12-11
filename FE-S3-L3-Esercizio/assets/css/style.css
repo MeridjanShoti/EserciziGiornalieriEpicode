@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+main div ul{
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+}
+body{text-align: center;}
+li{
+    border-bottom: 1px solid gray;
+    width: 50%;
+    margin: auto;
+    list-style-type:square;
+}
+ul{
+    padding: 5em;
+    background-color: bisque;
+}
