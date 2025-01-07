@@ -184,10 +184,12 @@ footer a {
 @media (min-width: 576px) {
     table {
         margin-inline: auto;
+        width: 80%;
     }
     .bold{
         font-weight: bold;
     }
+
 }
 @media (min-width: 768px) {
     header div, header nav, header p, header img, header li {
@@ -204,15 +206,16 @@ footer a {
    }
    iframe, section {
     display: inline-block;
-    width: 49%;
+    width: 50%;
     vertical-align: top;
     height: 15em;
     border-radius: 20px;
+    margin-inline: -2px;
 }
 aside div{
     display: inline-block;
-    width:33%;
-    margin-inline: 0;
+    width:33.33%;
+    margin-inline: -2px;
 }
 }
 @media print {
