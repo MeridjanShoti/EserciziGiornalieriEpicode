@@ -47,3 +47,30 @@ padding: 2em;
     border-radius: 5em;
     box-shadow: inset -13px 17px 50px -5px rgba(0, 0, 0, 0.705),0px 0px 28px 7px rgba(0, 0, 0, 0.712);
 }
+#RESET{
+    padding: 1em;
+    font-size: 3em;
+    border-radius: 1em;
+    background-color: aqua;
+    color: blueviolet;
+    box-shadow: inset -13px 17px 50px -5px rgba(0, 0, 0, 0.705),0px 0px 28px 7px rgba(0, 0, 0, 0.712);
+    text-align: center;
+    
+}
+#reset{
+    margin: 2em auto;
+    text-align: center;
+}
+#tPlayer{
+    background-color: bisque;
+    text-align: center;
+}
+.scheda{
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 2em;
+    margin: 2em;
+    text-align: center;
+    width:40%;
+    display: inline-block;
+}
